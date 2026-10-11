@@ -1,0 +1,212 @@
+html,
+body {
+  background: #f4f5f6;
+}
+
+.lp-wrap {
+  max-width: 768px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 -10px 20px rgba(139, 142, 144, 0.2);
+}
+
+.lp-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* それぞれのセクションを配置の基準にする */
+#mv,
+#seaclet {
+  position: relative;
+}
+
+/* FVのCTA */
+#mv .mv-btn {
+  position: absolute;
+  top: 90%;
+  bottom: auto;
+  left: 10%;
+  width: 80%;
+  margin: 0;
+  transform: none;
+  z-index: 10;
+}
+
+/* 途中のCTAの親要素 */
+#seaclet > .cta {
+  position: absolute;
+  top: 96%;
+  left: 10%;
+  width: 80%;
+  margin: 0;
+  z-index: 10;
+}
+
+/* 見学の流れの下・フッター上のCTA */
+.lp-cta .sub-cta-btn {
+  position: static;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  transform: none;
+}
+
+.lp-cta .sub-cta-btn img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* フッター上のCTAだけ上に移動 */
+#cta .sub-cta-btn {
+  position: relative;
+  top: -40px;
+}
+
+
+ 
+
+.cta-animation {
+  display: block;
+  animation-name: cta;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes cta {
+  0% {
+    transform: translateX(0);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  84% {
+    transform: translateX(6px);
+  }
+  88% {
+    transform: translateX(-6px);
+  }
+  92% {
+    transform: translateX(6px);
+  }
+  96% {
+    transform: translateX(-6px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Slick調整 */
+.lp-slider img {
+  width: 100%;
+  display: block;
+}
+
+.slick-dotted.slick-slider {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #cccccc;
+}
+
+/* FAQアコーディオン */
+.lp-faq {
+  padding: 24px 16px 40px;
+}
+
+.faq {
+  padding-bottom: 30px;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  width: 80%;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+  font-size: 20px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.faq-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.faq-question i {
+  display: grid;
+  place-content: center;
+}
+
+.faq-question span {
+  position: absolute;
+  padding-left: 25px;
+}
+
+.faq-answer {
+  display: none;
+  padding-left: 25px;
+  padding-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* 開いた状態 */
+.faq-item.is-open .faq-answer {
+  display: block;
+}
+
+/* フッター */
+.lp-footer {
+  padding: 24px 16px;
+  font-size: 13px;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+}
+
+.footer-copy {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+/* セクション画像の下にできる隙間をなくす */
+.lp-section > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
